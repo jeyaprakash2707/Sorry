@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iam Sorry, My Love</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .dancing-script { font-family: 'Dancing Script', cursive; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+    @keyframes sparkle { 0%, 100% { opacity: 0; transform: scale(0); } 50% { opacity: 1; transform: scale(1); } }
+    @keyframes openCard { 0% { transform: perspective(1000px) rotateY(-90deg); opacity: 0; } 100% { transform: perspective(1000px) rotateY(0deg); opacity: 1; } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    .card-container { animation: fadeIn 1s ease-out, openCard 1.5s ease-out; }
+    .heart-icon { animation: heartbeat 2s ease-in-out infinite; }
+    .floating-hearts-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+    .floating-bg-heart { position: absolute; color: rgba(255, 107, 157, 0.3); animation: float 3s ease-in-out infinite; }
+    .message-box { backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
+    .btn-hover { transition: all 0.3s ease; }
+    .btn-hover:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(255, 107, 157, 0.5); }
+    .envelope { animation: pulse 3s ease-in-out infinite; }
+    .tear-drop { animation: float 2s ease-in-out infinite; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }
+    .slide-in { animation: slideIn 0.8s ease-out; }
+    .rose { animation: float 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 min-h-screen overflow-x-hidden flex items-center justify-center p-4">
+  <div id="particles-js"></div>
+
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts-bg">
+    <div class="floating-bg-heart text-2xl" style="top: 10%; left: 10%; animation-delay: 0s;">💕</div>
+    <div class="floating-bg-heart text-3xl" style="top: 20%; right: 15%; animation-delay: 1s;">💔</div>
+    <div class="floating-bg-heart text-xl" style="top: 60%; left: 20%; animation-delay: 2s;">💖</div>
+    <div class="floating-bg-heart text-2xl" style="bottom: 30%; right: 10%; animation-delay: 1.5s;">💝</div>
+    <div class="floating-bg-heart text-xl" style="bottom: 10%; left: 30%; animation-delay: 0.5s;">😢</div>
+    <div class="floating-bg-heart text-2xl" style="top: 40%; right: 25%; animation-delay: 2.5s;">🌹</div>
+  </div>
+
+  <!-- Main Sorry Card -->
+  <div class="card-container relative z-10 max-w-2xl w-full">
+    <!-- Card Header -->
+    <div class="text-center mb-8">
+      <div class="envelope text-6xl md:text-8xl mb-4">✉️</div>
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 dancing-script">
+        I'm So Sorry, Deepthi 💔
+      </h1>
+      <div class="tear-drop text-3xl md:text-5xl">😢</div>
+    </div>
+
+    <!-- Main Card Content -->
+    <div class="message-box rounded-3xl p-6 md:p-10 mb-6">
+      <!-- Rose Icon -->
+      <div class="text-center mb-6">
+        <div class="rose text-6xl md:text-7xl inline-block">🌹</div>
+      </div>
+
+      <!-- Sorry Message -->
+      <div class="space-y-6 text-white/90 text-base md:text-lg">
+        <p class="slide-in text-center leading-relaxed">
+          My dearest Deepthi, words cannot express how truly sorry I am for hurting you.
+          You mean the world to me, and the thought of causing you pain breaks my heart. 💔
+        </p>
+
+        <p class="slide-in text-center leading-relaxed" style="animation-delay: 0.3s;">
+          I know I made a mistake, and I take full responsibility for my actions.
+          You deserve nothing but love, respect, and happiness, and I failed to give you that.
+        </p>
+
+        <p class="slide-in text-center leading-relaxed" style="animation-delay: 0.6s;">
+          Please know that I'm genuinely sorry and I'm committed to doing better.
+          Your smile is my sunshine, your happiness is my goal, and your forgiveness would mean everything to me.
+        </p>
+
+        <p class="slide-in text-center leading-relaxed font-semibold text-pink-200" style="animation-delay: 0.9s;">
+          I love you more than words can say, and I promise to show you every day how much you mean to me. 💕
+        </p>
+      </div>
+
+      <!-- Heart Break Icon -->
+      <div class="text-center my-8">
+        <div class="heart-icon text-5xl inline-block">💝</div>
+      </div>
+
+      <!-- Personal Note -->
+      <div class="bg-white/10 rounded-2xl p-4 md:p-6 border border-white/20 text-center">
+        <p class="text-white/90 text-base md:text-lg italic">
+          "I would rather lose my pride than lose you.
+          Please give me a chance to make things right.
+          You're my everything." 🥺
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Actions -->
+    <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+      <button class="btn-hover bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-3 px-8 rounded-full text-base md:text-lg shadow-lg" onclick="showMessage()">
+        I Forgive You 💕
+      </button>
+      <button class="btn-hover bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold py-3 px-8 rounded-full text-base md:text-lg shadow-lg" onclick="moreApology()">
+        Tell Me More 💬
+      </button>
+    </div>
+
+    <!-- Extra Message (Hidden Initially) -->
+    <div id="extraMessage" class="message-box rounded-3xl p-6 md:p-8 mt-6 hidden">
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 text-center dancing-script">
+        Thank You for Listening 🙏
+      </h3>
+      <p class="text-white/90 text-base md:text-lg text-center leading-relaxed mb-4">
+        I know actions speak louder than words, and I'm ready to prove to you that I've learned from this.
+        You deserve someone who treasures you every single day, and I want to be that person.
+      </p>
+      <p class="text-white/90 text-base md:text-lg text-center leading-relaxed">
+        Will you give me another chance to make you smile?
+        I promise to cherish every moment with you. 💖
+      </p>
+      <div class="text-center mt-6">
+        <div class="text-5xl">🤗💕✨</div>
+      </div>
+    </div>
+
+    <!-- Forgiveness Message (Hidden Initially) -->
+    <div id="forgivenessMessage" class="message-box rounded-3xl p-6 md:p-8 mt-6 hidden">
+      <div class="text-center">
+        <div class="text-6xl md:text-8xl mb-4 heart-icon">❤️</div>
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4 dancing-script">
+          Thank You, My Love! 🥰
+        </h3>
+        <p class="text-white/90 text-lg md:text-xl leading-relaxed mb-4">
+          You have the kindest heart, and I'm so grateful for your forgiveness.
+          I promise to never take you for granted again.
+        </p>
+        <p class="text-pink-200 text-xl md:text-2xl font-semibold">
+          I love you so much! 💕✨🌹
+        </p>
+        <div class="mt-6">
+          <div class="text-4xl">😊🎉💖🤗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature -->
+    <div class="text-center mt-8">
+      <p class="text-white/80 text-lg md:text-xl dancing-script">
+        With all my heart and deepest regret,
+      </p>
+      <p class="text-pink-200 text-xl md:text-2xl font-bold dancing-script mt-2">
+        Yours Always 💔➡️❤️
+      </p>
+    </div>
+  </div>
+
+  <script>
+    if (typeof particlesJS !== 'undefined') {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 50 },
+          color: { value: ['#ff6b9d', '#ffd93d', '#6bcf7f', '#ff0000'] },
+          shape: { type: 'circle' },
+          size: { value: 3, random: true },
+          move: { enable: true, speed: 1 },
+          opacity: { value: 0.5 }
+        }
+      });
+    }
+
+    function showMessage() {
+      const msg = document.getElementById('forgivenessMessage');
+      msg.classList.remove('hidden');
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      createCelebration();
+    }
+
+    function moreApology() {
+      const msg = document.getElementById('extraMessage');
+      msg.classList.remove('hidden');
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function createCelebration() {
+      for (let i = 0; i < 30; i++) {
+        setTimeout(() => {
+          createSparkle(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
+        }, i * 100);
+      }
+    }
+
+    function createSparkle(x, y) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'fixed pointer-events-none text-yellow-300 text-xl';
+      sparkle.innerHTML = ['✨', '💕', '❤️', '💖'][Math.floor(Math.random() * 4)];
+      sparkle.style.left = x + 'px';
+      sparkle.style.top = y + 'px';
+      sparkle.style.animation = 'sparkle 1.5s ease-out forwards';
+      document.body.appendChild(sparkle);
+
+      setTimeout(() => {
+        if (document.body.contains(sparkle)) {
+          document.body.removeChild(sparkle);
+        }
+      }, 1500);
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('button')) {
+        createSparkle(e.pageX, e.pageY);
+      }
+    });
+
+    setInterval(() => {
+      const emojis = ['💔', '😢', '🌹', '💕'];
+      const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+      const x = Math.random() * window.innerWidth;
+      const y = window.innerHeight;
+
+      const floatingEmoji = document.createElement('div');
+      floatingEmoji.className = 'fixed pointer-events-none text-3xl';
+      floatingEmoji.textContent = emoji;
+      floatingEmoji.style.left = x + 'px';
+      floatingEmoji.style.top = y + 'px';
+      floatingEmoji.style.animation = 'float 4s ease-out forwards';
+      floatingEmoji.style.opacity = '0.6';
+      document.body.appendChild(floatingEmoji);
+
+      setTimeout(() => {
+        if (document.body.contains(floatingEmoji)) {
+          document.body.removeChild(floatingEmoji);
+        }
+      }, 4000);
+    }, 2000);
+  </script>
+</body>
+</html>
